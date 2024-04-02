@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func findClosestColor(target string, colors []string) string {
+func FindClosestColor(target string, colors []string) string {
 	closestDistance := -1
 	closestColor := ""
 
