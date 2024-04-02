@@ -1,0 +1,6 @@
+POST http://localhost:8080/color
+content-type: : application/json
+
+{
+    "color_hex": "#00FF00",
+}

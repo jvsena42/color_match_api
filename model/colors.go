@@ -5,8 +5,8 @@ import (
 )
 
 type Color struct {
-	ColorHex     string
-	ClosestColor string
+	ColorHex     string `json:"color_hex"`
+	ClosestColor string `json:"closest_color"`
 }
 
 func (color *Color) GetClosestColor() {

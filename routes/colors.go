@@ -22,5 +22,5 @@ func getClosestColor(context *gin.Context) {
 
 	color.GetClosestColor()
 
-	context.JSON(http.StatusOK, gin.H{"closest_color": color.ClosestColor})
+	context.JSON(http.StatusOK, gin.H{"closest_color": color})
 }
