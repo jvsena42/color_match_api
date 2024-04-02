@@ -1,7 +1,13 @@
 package repository
 
-import "github.com/gin-gonic/gin"
+import (
+	"com.jvsena42/color_match/utils"
+)
 
-func GetColor(context *gin.Context) {
+func GetClosestColor(color string) string {
+	colorList := []string{"#FF4444", "#00FF00", "#FF0044", "#4444FF"}
 
+	foundColor := utils.FindClosestColor(color, colorList)
+
+	return foundColor
 }
